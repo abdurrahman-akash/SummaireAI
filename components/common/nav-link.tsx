@@ -1,38 +1,29 @@
-'use client';
-import React from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation';
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavLink = ({
   href,
   children,
-  className,
+  className = "",
 }: {
   href: string;
   children: React.ReactNode;
   className?: string;
 }) => {
-  function cn(...classes: (string | undefined)[]): string {
-    return classes.filter(Boolean).join(' ');
-  }
-
   const pathname = usePathname();
-  const isActive =
-    pathname === href || (href !== '/' && pathname.startsWith(href));
-  
-  return (
-    <div>
-      <Link 
-      href={href}
-      className={cn(
-        'transition-colors text-sm duration-200 text-gray-600 hover:text-rose-500',
-        className, isActive ? 'text-rose-500' : ''
-      )}
-      >
-      {children}
-      </Link>
-    </div>
-  )
-}
+  const isActive = pathname === href || (href !== "/" && pathname.startsWith(href));
 
-export default NavLink
+  return (
+    <Link
+      href={href}
+      className={`text-sm transition-colors duration-200 ${
+        isActive ? "text-blue-600 font-semibold" : "text-gray-600"
+      } hover:text-blue-500 ${className}`}
+    >
+      {children}
+    </Link>
+  );
+};
+
+export default NavLink;
