@@ -18,8 +18,8 @@ const NavLink = ({
     <Link
       href={href}
       className={`text-sm transition-colors duration-200 ${
-        isActive ? "text-blue-600 font-semibold" : "text-gray-600"
-      } hover:text-blue-500 ${className}`}
+        isActive ? "text-emerald-600 font-semibold" : "text-gray-600"
+      } hover:text-emerald-500 ${className}`}
     >
       {children}
     </Link>

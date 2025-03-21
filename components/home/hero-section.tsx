@@ -7,17 +7,14 @@ const HeroSection = () => {
   return (
     <section className="relative flex mx-auto flex-col z-0 items-center py-16
     sm:py-20 lg-pb-28 transition-all lg:px-12 max-w-7xl w-full">
-      <div className="text-center max-w-2xl">
+      <div className="text-center max-w-xl">
         <div className="flex justify-center">
-          <div className="relative p-[1px] rounded-full bg-gradient-to-r from-emerald-300 via-emerald-500 to-emerald-700 animate-gradient-x group">
-            <Badge
-              variant={"outline"}
-              className="relative flex items-center gap-2 px-6 py-2 text-sm font-medium bg-white rounded-full shadow-md transition-colors duration-300 group-hover:bg-gray-100"
-            >
-              <Sparkles className="w-10 h-10 text-emerald-500 animate-pulse" />
-              <span className="text-emerald-600">Powered by AI</span>
-            </Badge>
-          </div>
+        <div className="flex justify-center">
+          <Badge className="flex items-center gap-2 px-4 py-2 border border-emerald-500 text-emerald-600 bg-transparent rounded-full shadow-md">
+            <Sparkles className="h-5 w-5 text-emerald-600 animate-pulse" />
+            <span className="text-sm font-semibold">Powered By AI</span>
+          </Badge>
+        </div>
         </div>
 
         <h1 className="mt-6 text-4xl font-extrabold text-gray-900 md:text-5xl leading-tight tracking-tight">

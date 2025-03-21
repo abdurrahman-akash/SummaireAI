@@ -15,7 +15,7 @@ export default function Footer() {
               height={50}
               className="w-14 h-14 rounded-full border-2 border-gray-300 shadow-md"
             />
-            <span className="font-semibold text-lg">Ankita <span className="text-green-600">🧡</span></span>
+            <span className="font-semibold text-lg">Akash <span className="text-green-600">🧡</span></span>
           </div>
           <p className="mt-3 text-sm">
             <a href="#" className="text-gray-600 hover:text-gray-900 transition">Contact</a>
