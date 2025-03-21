@@ -14,7 +14,6 @@ const Header = () => {
 
       <div className="hidden lg:flex flex-1 justify-center gap-8">
         <NavLink href="/#pricing">Pricing</NavLink>
-        <NavLink href="/#features">Features</NavLink>
         {isLoggedIn && <NavLink href="/dashboard">Dashboard</NavLink>}
       </div>
 
@@ -22,14 +21,14 @@ const Header = () => {
         {isLoggedIn ? (
           <div className="flex items-center gap-4">
             <NavLink href="/upload">Upload A PDF</NavLink>
-            <span className="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">
+            <span className="px-3 py-1 text-sm font-semibold text-white bg-emerald-500 rounded-full">
               Pro
             </span>
             <Button>Profile</Button>
           </div>
         ) : (
             <NavLink href="/sign-in">
-            <Button className="hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white transform transition-transform duration-200 hover:scale-110" variant="outline">Sign In</Button>
+            <Button className="hover:bg-gradient-to-r hover:from-emerald-400 hover:to-emerald-600 hover:text-white transform transition-transform duration-200 hover:scale-110" variant="outline">Sign In</Button>
             </NavLink>
         )}
       </div>

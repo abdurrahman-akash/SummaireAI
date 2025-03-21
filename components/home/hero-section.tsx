@@ -6,16 +6,16 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section className="relative flex mx-auto flex-col z-0 items-center py-16
-    sm:py-20 lg-pb-28 transition-all lg:px-12 max-w-7xl w-full h-screen">
+    sm:py-20 lg-pb-28 transition-all lg:px-12 max-w-7xl w-full">
       <div className="text-center max-w-2xl">
         <div className="flex justify-center">
-          <div className="relative p-[1px] rounded-full bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 animate-gradient-x group">
+          <div className="relative p-[1px] rounded-full bg-gradient-to-r from-emerald-300 via-emerald-500 to-emerald-700 animate-gradient-x group">
             <Badge
               variant={"outline"}
               className="relative flex items-center gap-2 px-6 py-2 text-sm font-medium bg-white rounded-full shadow-md transition-colors duration-300 group-hover:bg-gray-100"
             >
-              <Sparkles className="w-10 h-10 text-blue-500 animate-pulse" />
-              <span className="text-blue-600">Powered by AI</span>
+              <Sparkles className="w-10 h-10 text-emerald-500 animate-pulse" />
+              <span className="text-emerald-600">Powered by AI</span>
             </Badge>
           </div>
         </div>
@@ -25,7 +25,7 @@ const HeroSection = () => {
           <span className="relative inline-block">
           <span className="relative z-10 px-2">Concise</span>
           <span 
-          className="absolute inset-0 bg-blue-200/50 -rotate-2
+          className="absolute inset-0 bg-emerald-200/50 -rotate-2
           rounded-lg transform -skew-x-1"
           aria-hidden="true"
           ></span>
@@ -41,10 +41,10 @@ const HeroSection = () => {
             <Button
               variant={'link'} 
               className="text-white text-base sm-text-lg lg:text-xl
-              rounded-full px-8 sm:px-10 lg:px-12 py-3 sm:py-4 lg:py-5
-              bg-gradient-to-r from-slate-900 to-blue-500 hover:from-blue-500 hover:to-slate-900
+              rounded-full px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-4
+              bg-gradient-to-r from-slate-900 to-emerald-500 hover:from-emerald-500 hover:to-slate-900
               hover:no-underline transition-all duration-300">
-              <span>Get Started</span>
+              <span>Try SummaireAI</span>
               <ArrowRight className="animate-pulse" />
             </Button>
           </Link>
