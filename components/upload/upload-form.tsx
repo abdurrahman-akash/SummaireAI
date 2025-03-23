@@ -49,7 +49,7 @@ export default function UploadForm() {
             toast('❌ Something went wrong', {
                 description:
                     validatedFields.error.flatten().fieldErrors.file?.[0] ?? 'Invalid file',
-                variant: 'destructive',
+                style: { color: 'red' },
             });
 
             return;
@@ -65,13 +65,13 @@ export default function UploadForm() {
         if (!resp) {
             toast('❌ Something went wrong', {
                 description: 'Please use a different file',
-                variant: 'destructive',
+                style: { color: 'red' },
             });
             return;
         }
 
         toast('🏷️ Processing your pdf', {
-            variant: 'loading',
+            style: { fontStyle: 'italic' },
             description: 'Hang tight! Our AI is reading through your document! ',
         })
         // parse the pdf using lang chain
