@@ -1,4 +1,4 @@
-import { Pizza, Section } from "lucide-react";
+import { Pizza } from "lucide-react";
 
 export default function DemoSection() {
     return (
