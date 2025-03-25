@@ -85,9 +85,9 @@ export default function UploadForm() {
         const summary = await generatePdfSummary(transformedResp);
         console.log({ summary });
 
-        if (!summary.success) {
+        if (!summary || !summary.success) {
             toast('❌ PDF Processing Failed', {
-                description: summary.message,
+                description: summary?.message || 'An unknown error occurred.',
                 style: { color: 'red' },
             });
         } else {
